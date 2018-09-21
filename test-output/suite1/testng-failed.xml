@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [suite1]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="utils.RetryListener"/>
+    <listener class-name="utils.TestNGListener"/>
+  </listeners>
+  <test name="test1">
+    <classes>
+      <class name="test.TestDemo1"/>
+    </classes>
+  </test> <!-- test1 -->
+  <test name="test1(failed)">
+    <classes>
+      <class name="test.TestDemo1">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- test.TestDemo1 -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [suite1] -->

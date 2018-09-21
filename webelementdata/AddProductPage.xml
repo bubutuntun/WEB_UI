@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page name="增加产品页"><!-- 增加产品页面 -->
+	<locator name="添加产品" type="css"
+		value="a[href='/zentao/product-create.html']" timeout="10">addProduct</locator>
+	<locator name="产品名称" type="css" value="input#name" timeout="10">productName</locator>
+	<locator name="产品代号" type="css" value="input#code" timeout="10">productNumber</locator>
+	<locator name="选择产品负责人" type="css" value="div#PO_chosen > a"
+		timeout="10">selectProductOwner</locator>
+	<locator name="测试负责人" type="css" value="div#QD_chosen > a"
+		timeout="10">selectTestOwner</locator>
+	<locator name="测试负责人" type="css" value="div#RD_chosen > a"
+		timeout="10">selectAnnounceOwner</locator>
+	<locator name="保存按钮" type="css" value="button#submit" timeout="10">saveButton</locator>
+</page>

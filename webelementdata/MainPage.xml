@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page name="主页面"><!-- 登录页面 -->
+	<locator name="产品首页" type="css"
+		value="li[data-id='product'] > a[href='/zentao/product/']" timeout="5">productHomePage</locator>
+	<locator name="项目页" type="css"
+	   value="li[data-id='project'] > a[href='/zentao/project/']" timeout="5">projectHomePage</locator>
+</page>
